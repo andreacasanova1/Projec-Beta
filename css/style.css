@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/*este es el menu burger, animado de tres lineas a una equis*/
+.menu-burger { /*este es el padre de mi menú*/
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: 5px;
+    left: 50%;
+    right: 50%;
+
+}
+.menu-burger span {
+    display:block;
+    width: 100%;
+    height: 2px;
+    margin-top: 6px;
+    background: red;
+    transform-origin: 0px 100%;
+    transition: all 600ms;
+}
+/*aqui se llama a js mediante el selector activeline*/
+.activeline1__menu-burger {
+    transform : rotate(45deg) translate(-2px, 1px);
+}
+
+.activeline3__menu-burger {
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+
+.activeline2__menu-burger {
+    opacity: 0;
+    margin-left: -30px;
+}
